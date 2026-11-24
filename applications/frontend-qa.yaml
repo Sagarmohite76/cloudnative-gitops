@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: frontend-qa
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/Sagarmohite76/cloudnative-gitops.git
+    targetRevision: main
+    path: frontend
+
+    helm:
+      valueFiles:
+        - values-qa.yaml
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: frontend-qa
+
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
