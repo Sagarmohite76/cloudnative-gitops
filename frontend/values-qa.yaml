@@ -1,7 +1,7 @@
 replicaCount: 2
 image:
   repository: 998105437824.dkr.ecr.ap-south-1.amazonaws.com/frontend
-  tag: "1fe1dae481b0"
+  tag: "d0d0b0440d0c"
   pullPolicy: IfNotPresent
 resources:
   requests:
