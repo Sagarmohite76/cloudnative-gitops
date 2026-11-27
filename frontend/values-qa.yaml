@@ -1,17 +1,12 @@
 replicaCount: 2
-
 image:
   repository: 998105437824.dkr.ecr.ap-south-1.amazonaws.com/frontend
-  tag: "v1.0.0"
+  tag: "037ad9b0e7f2"
   pullPolicy: IfNotPresent
-
-
 resources:
   requests:
     cpu: 150m
     memory: 128Mi
-
   limits:
     cpu: 500m
     memory: 512Mi
-
