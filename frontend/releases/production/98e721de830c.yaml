@@ -1,0 +1,22 @@
+schemaVersion: 1
+application: frontend
+environment: production
+status: SUCCESS
+changeTicket: CHG-2026-001
+image:
+  repository: 998105437824.dkr.ecr.ap-south-1.amazonaws.com/frontend
+  tag: 98e721de830c
+  digest: sha256:585fa06ab294cab13c8208980195d1e665c4dfb448debaba381986403dba8ee2
+qa:
+  result: APPROVED
+  approvedDigest: sha256:585fa06ab294cab13c8208980195d1e665c4dfb448debaba381986403dba8ee2
+production:
+  releaseActorId: Sagar
+  releaseActorName: Sagar Mohite
+  releasedAt: "2026-11-27T18:21:28Z"
+  releaseNotes: ok
+  url: http://cloudnative-sagar.duckdns.org
+jenkins:
+  jobName: frontend-production-release
+  buildNumber: "13"
+  buildUrl: http://65.0.42.124:8080/job/frontend-production-release/13/
