@@ -1,0 +1,17 @@
+schemaVersion: 1
+application: frontend
+environment: qa
+result: APPROVED
+image:
+  repository: 998105437824.dkr.ecr.ap-south-1.amazonaws.com/frontend
+  tag: 1c94de8a79ac
+  digest: sha256:6b4b9eeb725ddf5e943d05046f26ff3e8a4e6bda3fc41c7b2b7f49aa8447f594
+qa:
+  actorId: Sagar
+  actorName: Sagar Mohite
+  notes: Ready for production
+  signedAt: "2026-11-27T18:09:14Z"
+jenkins:
+  jobName: frontend-qa-signoff
+  buildNumber: "6"
+  buildUrl: http://65.0.42.124:8080/job/frontend-qa-signoff/6/
